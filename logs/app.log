@@ -1,0 +1,38 @@
+2026-03-13 14:01:08,112 | INFO | services.llm_service | Creating base card
+2026-03-13 14:01:08,116 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-13 14:01:08,116 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7998956ec8d0>
+2026-03-13 14:01:08,116 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-13 14:01:08,116 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-13 14:01:08,116 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-13 14:01:08,116 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-13 14:01:08,116 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-13 14:02:32,437 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Fri, 13 Mar 2026 17:02:32 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-13 14:02:32,437 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-13 14:02:32,437 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-13 14:06:31,408 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-13 14:06:31,408 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-13 14:06:31,408 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-13 14:06:31,408 | INFO | services.llm_service | Creating back-end card
+2026-03-13 14:06:31,409 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-13 14:06:31,409 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-13 14:06:31,409 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-13 14:06:31,409 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-13 14:06:31,409 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-13 14:09:38,863 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Fri, 13 Mar 2026 17:09:38 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-13 14:09:38,864 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-13 14:09:38,864 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-13 14:11:58,739 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-13 14:11:58,739 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-13 14:11:58,739 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-13 14:11:58,739 | INFO | services.llm_service | Creating front-end card
+2026-03-13 14:11:58,740 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-13 14:11:58,740 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-13 14:11:58,740 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-13 14:11:58,740 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-13 14:11:58,740 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-13 14:15:06,049 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Fri, 13 Mar 2026 17:15:06 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-13 14:15:06,049 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-13 14:15:06,049 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-13 14:17:54,075 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-13 14:17:54,075 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-13 14:17:54,075 | DEBUG | httpcore.http11 | response_closed.complete

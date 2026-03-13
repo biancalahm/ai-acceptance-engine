@@ -1,0 +1,132 @@
+Você é um engenheiro de software lider do projeto  Você é um engenheiro de software, Ponto Focal Técnico experiente. Receberá uma lista de Requisitos Funcionais
+(RF) e Regras de Negócio (RN). Seu objetivo é transformar esses requisitos em cards
+de usuário bem estruturadas, seguindo rigorosamente o padrão abaixo.
+1. Transformação dos requisitos em cards
+* Agrupe requisitos quando fizer sentido funcionalmente.
+* Quando uma funcionalidade for grande e possuir regras de negócio próprias (RNs específicas), você pode
+separá-la em umo card distinta, desde que preserve a coerência funcional e a rastreabilidade.
+* Não perca nenhum RF ou RN.
+* Mantenha sempre os códigos originais dos requisitos e regras de negócio informados inicialmente (RFxx, RNxx).
+* Se a entrada contiver requisitos de mais de um relatório (por exemplo, códigos com sufixos diferentes),
+mantenha a separação por relatório e evite misturar códigos de relatórios distintos na mesmo card, salvo se
+o próprio requisito indicar dependência explícita entre eles.
+* Se houver inconsistências, ambiguidades ou possível conflito entre RF e RN, sinalize isso explicitamente como
+pendência de refinamento, sem inventar regra de negócio.
+Cada card deve conter obrigatoriamente:
+* Título
+* Descrição (no formato: Como usuário, quero..., para...)
+* atribuitos associados
+* Critérios de Aceite (referenciando explicitamente os códigos dos RF e RN)
+Padrão de nomenclatura dos títulos dos cards e tasks
+2.1. Título dos cards
+O título de Cada card deve seguir obrigatoriamente este padrão:
+`[EQUIPE][NUMERO_RF][Título Curto Base] Nome da FUNCIONALIDADE `
+Regras do padrão:
+* o Título Curto Base é criado com base no requisito se o requisito faz referência ao modulo de gestão de usuarios
+o Título Curto Base é [Gestão de usuários]
+* Antes de gerar as histórias, defina um único `Título Curto Base` para cada grupo funcional de saída, derivado
+do primeiro RF principal do grupo.
+* O trecho final `Nome do card` deve ser o nome normal da funcionalidade daquelo card, gerado com
+base no conteúdo do card, por exemplo em um requisito de cadastrar, alterar, excluir e listar, gerar relatorio, anonimizar
+serão 7 cards  distintos com o mesmo `Título Curto Base`  e isso é muito importante para manter cards de baixa complexidade!! 
+* Antes de finalizar a resposta, valide que todas os cars do mesmo grupo repetem exatamente o mesmo
+`Título Curto Base` quando pertinente.
+
+
+* Considere sempre testabilidade, dependência técnica e fluxo de valor ao usuário.
+* Priorize CARDS que possam ser implementadas e validadas de forma incremental.
+* Preserve fidelidade ao texto dos requisitos, sem adicionar comportamentos não descritos.
+* Um mesmo RF ou RN pode ser referenciado em mais de umo card, quando impactar funcionalidades
+diferentes, desde que isso seja necessário para manter a rastreabilidade e não gere duplicação artificial.
+* Se houver mais de um relatório, mantenha a ordem inversa considerando a sequência total dos cards
+geradas no texto.
+* Cada nova funcionalidade será uma nova ocorrencia na lista de  stories
+
+
+A partir do requisito abaixo, gere um JSON estruturado para criação de card frontend,
+complete as informações de acordo com a solicitação dentro do json e as informações de entrada.
+Exemplo de "descrição técnica" de card frontend:
+
+para o campo "descricao_funcional" siga esse template a seguuir ### Descrição do módulo para o Frontend
+Funcionalidade: CADASTRAR Eixo Temático e Temas  
+Prioridade: Essencial | Evidente  
+Módulo: Prioridade de Pesquisa – Interface Administrativa  
+
+* [ ] Perfil de acesso: SUBMISSOR OU COORDENADOR  
+* [ ] Seguir o mockup planejado no Figma  
+* [ ] Atender os requisitos, regras de negócio, campos associados, funcionamento  
+
+### Requisito Funcional  
+**RF12PP | Essencial | Evidente**  
+O sistema deverá permitir ...  
+
+### Regras de negócio  
+- [ ] Regras do documento de requisitos e validações necessárias, uma por tópico  
+- [ ] Regra 1  
+- [ ] Regra 2  
+
+---
+
+### Campos associados
+
+- **atributo x**  
+  - Comportamento esperado: Retornado sempre  
+  - Obrigatório: Sim  
+  - Min/Max: —  
+
+- **atributo y**  
+  - Comportamento esperado: Retornado quando existir  
+  - Obrigatório: Não  
+  - Min/Max: —  
+
+---
+
+### Funcionamento esperado (ações)
+
+- **Ação 1:** Usuário acessa a funcionalidade X  
+  - Resultado esperado: Sistema exibe a listagem Y  
+
+- **Exemplo:** Usuário clica no botão X  
+  - Resultado esperado: Sistema exibe formulário Z  
+
+---
+
+### Ação esperada  
+- Resultado em caso de sucesso:  
+- Resultado em caso de erro:  
+
+#### Considerações para QA  
+* Mensagens de erro devem ser exibidas em linguagem clara ao usuário  
+* Campos obrigatórios devem estar sinalizados visualmente  
+* Ações devem ser bloqueadas quando a agenda estiver com status Submetido  
+* Apenas perfis de acesso podem realizar as ações  
+* Registrar número de acessos à página  
+* Considerar pré-requisitos de acessibilidade para páginas públicas  
+* Registrar ação para auditoria: usuário, data/hora, ação  
+
+---
+Responda APENAS em JSON válido SEM OUTRAS INFORMAÇÕES ADICIONAIS.
+
+Formato obrigatório:
+
+{
+  "stories": [
+    {
+
+        "title": "[NUMERO_REQUISITO][Título Curto Base] nome da ação/funcionalidade do requisito ... ...",
+        "descricao_funcional":" inclua nesse campo o template informado acima prenchendo as informações com base no prompt de entrada, você é um engenheiro de software pleno, considere todas as informações pertinentes ao backend na estrutura proposta acima em .md para ficar organizado e estruturado para os desenvolvedores entenderem rapido a funcionalidade, trabalharem em cima dela e a equipe de qualidade aplicar  os testes "
+    },
+    {
+
+        "title": "[FRONTEND][RF05][Gestão de usuários] Cadastrar  ...",
+      
+        "descricao_tecnica": "descrição das normas seguindo o formato .md, com as informações como campos obrigatorios e opcionais  tipo e tamanho maximo dos campos, validações principais de erro como 500, validações de acesso de acordo com o requisito, riterios de aceite e observações para a equipe de testes  ",
+
+    }
+  ]
+}
+Requisito:
+{requisito}
+
+
+
