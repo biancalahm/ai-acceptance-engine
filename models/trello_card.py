@@ -1,30 +1,18 @@
-from pydantic import BaseModel
-from typing import List
-from pydantic import field_validator
+# models/trello_card.py
+from pydantic import BaseModel, Field, field_validator
+from typing import Optional
+
 
 class TrelloCard(BaseModel):
+    titulo:   str = Field(..., alias="name")
+    descricao: str = Field(..., alias="desc")
+    idList:   str = Field(..., alias="idList")
+    pos:      Optional[str] = Field(default="bottom", alias="pos")
 
-    titulo: str
-    descricao: str
-    idList: str
-#    tags: List[str]
-#    complexidade: int
-#    story:str | None
-#    epic: str | None
+    model_config = {"populate_by_name": True}
 
-# @field_validator("complexidade")
-# def validar_complexidade(cls, v):
-
-#     if v not in [1,3,5,8,13]:
-#         raise ValueError("complexidade inválida")
-
-#     return v
-
-# Schema para responder ao cliente
-class TrelloCardResponseSchema(BaseModel):
-    idList: str
-    name: str
-    desc: str
-    # tags: List[str]
-    # complexity: int
-    # members: List[str]
+    @field_validator("titulo", "descricao", "idList")
+    def nao_vazio(cls, v):
+        if not v or not v.strip():
+            raise ValueError("Campo não pode ser vazio")
+        return v

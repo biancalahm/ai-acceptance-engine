@@ -1,24 +1,16 @@
-# LangChain e LLM
-langchain>=0.1.0
-llama-cpp-python>=0.1.50   # Connects directly to the local Llama3.
-transformers>=4.35.0       # Optional, for additional pipelines or embeddings.
-torch>=2.1.0               # backend if the LLM needs PyTorch
-langchain-ollama>=0.3.1
-langchain-core
+# LLM e agente
+langchain>=0.3.0
+langchain-ollama>=0.2.0
+langchain-community>=0.3.0
 
-# Web/API
-fastapi>=0.105.0
-uvicorn[standard]>=0.23.0
-requests>=2.32.0
+# Agente ReAct (create_react_agent, AgentExecutor)
+langgraph>=0.2.0
 
-# Validação de schemas
-pydantic>=2.3.0
+# Validação de dados (TrelloCard model)
+pydantic>=2.0.0
 
-# Logging / utilitários
-rich>=13.5.2
+# Requisições HTTP (TrelloService)
+requests>=2.31.0
+
+# Variáveis de ambiente (.env)
 python-dotenv>=1.0.0
-tqdm>=4.66.0
-
-# Desenvolvimento / testes
-pytest>=8.4.2
-black>=23.12.0

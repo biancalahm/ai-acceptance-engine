@@ -36,3 +36,547 @@
 2026-03-13 14:17:54,075 | DEBUG | httpcore.http11 | receive_response_body.complete
 2026-03-13 14:17:54,075 | DEBUG | httpcore.http11 | response_closed.started
 2026-03-13 14:17:54,075 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 20:12:30,601 | INFO | services.llm_service | Creating base card
+2026-03-15 20:12:30,604 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-15 20:12:30,605 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x75480d367690>
+2026-03-15 20:12:30,605 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 20:12:30,605 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 20:12:30,605 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 20:12:30,605 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 20:12:30,605 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 20:14:22,225 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Sun, 15 Mar 2026 23:14:22 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-15 20:14:22,226 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-15 20:14:22,227 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-15 20:19:29,114 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-15 20:19:29,114 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 20:19:29,114 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 20:19:29,114 | INFO | services.llm_service | Creating back-end card
+2026-03-15 20:19:29,116 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 20:19:29,116 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 20:19:29,116 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 20:19:29,116 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 20:19:29,116 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 20:25:53,521 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Sun, 15 Mar 2026 23:25:53 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-15 20:25:53,521 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-15 20:25:53,521 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-15 20:30:07,488 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-15 20:30:07,488 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 20:30:07,488 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 20:38:02,227 | INFO | services.llm_service | Creating base card
+2026-03-15 20:38:02,230 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-15 20:38:02,230 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x729c24188510>
+2026-03-15 20:38:02,230 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 20:38:02,230 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 20:38:02,230 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 20:38:02,230 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 20:38:02,230 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 20:38:10,567 | DEBUG | httpcore.http11 | receive_response_headers.failed exception=KeyboardInterrupt()
+2026-03-15 20:38:10,567 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 20:38:10,567 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 20:38:15,163 | INFO | services.llm_service | Creating base card
+2026-03-15 20:38:15,168 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-15 20:38:15,169 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7ad51516bcd0>
+2026-03-15 20:38:15,169 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 20:38:15,169 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 20:38:15,169 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 20:38:15,169 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 20:38:15,169 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 20:38:18,954 | DEBUG | httpcore.http11 | receive_response_headers.failed exception=KeyboardInterrupt()
+2026-03-15 20:38:18,954 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 20:38:18,954 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 20:38:28,661 | INFO | services.llm_service | Creating base card
+2026-03-15 20:38:28,664 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-15 20:38:28,664 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x764d315f9890>
+2026-03-15 20:38:28,664 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 20:38:28,665 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 20:38:28,665 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 20:38:28,665 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 20:38:28,665 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 20:39:28,193 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Sun, 15 Mar 2026 23:39:28 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-15 20:39:28,194 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-15 20:39:28,194 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-15 20:43:00,479 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-15 20:43:00,479 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 20:43:00,479 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 20:43:00,479 | INFO | services.llm_service | Creating back-end card
+2026-03-15 20:43:00,481 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 20:43:00,481 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 20:43:00,481 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 20:43:00,481 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 20:43:00,481 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 20:46:31,324 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Sun, 15 Mar 2026 23:46:31 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-15 20:46:31,324 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-15 20:46:31,333 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-15 20:49:05,934 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-15 20:49:05,934 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 20:49:05,934 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 20:53:38,633 | INFO | services.llm_service | Creating base card
+2026-03-15 20:53:38,635 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-15 20:53:38,635 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x73823e4bc8d0>
+2026-03-15 20:53:38,635 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 20:53:38,635 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 20:53:38,635 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 20:53:38,635 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 20:53:38,635 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 20:54:58,957 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Sun, 15 Mar 2026 23:54:58 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-15 20:54:58,958 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-15 20:54:58,958 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-15 20:57:40,157 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-15 20:57:40,157 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 20:57:40,157 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 20:57:40,157 | INFO | services.llm_service | Creating back-end card
+2026-03-15 20:57:40,158 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 20:57:40,158 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 20:57:40,158 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 20:57:40,158 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 20:57:40,158 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 21:00:37,059 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Mon, 16 Mar 2026 00:00:37 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-15 21:00:37,059 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-15 21:00:37,059 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-15 21:01:53,066 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-15 21:01:53,066 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 21:01:53,066 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 21:01:53,066 | INFO | services.llm_service | Creating front-end card
+2026-03-15 21:01:53,067 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 21:01:53,067 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 21:01:53,067 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 21:01:53,067 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 21:01:53,067 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 21:05:02,238 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Mon, 16 Mar 2026 00:05:02 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-15 21:05:02,238 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-15 21:05:02,238 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-15 21:05:59,305 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-15 21:05:59,305 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 21:05:59,305 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 21:19:35,742 | INFO | services.llm_service | Creating base card
+2026-03-15 21:19:35,745 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-15 21:19:35,751 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x70f9b0e842d0>
+2026-03-15 21:19:35,751 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 21:19:35,751 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 21:19:35,751 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 21:19:35,752 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 21:19:35,752 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 21:20:21,309 | DEBUG | httpcore.http11 | receive_response_headers.failed exception=KeyboardInterrupt()
+2026-03-15 21:20:21,309 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 21:20:21,309 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 21:20:35,953 | INFO | services.llm_service | Creating base card
+2026-03-15 21:20:35,956 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-15 21:20:35,956 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7ed12b6891d0>
+2026-03-15 21:20:35,956 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 21:20:35,956 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 21:20:35,956 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 21:20:35,956 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 21:20:35,956 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 21:21:00,049 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Mon, 16 Mar 2026 00:21:00 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-15 21:21:00,050 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-15 21:21:00,050 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-15 21:24:15,841 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-15 21:24:15,842 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 21:24:15,842 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 21:24:15,842 | INFO | services.llm_service | Creating back-end card
+2026-03-15 21:24:15,843 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 21:24:15,843 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 21:24:15,843 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 21:24:15,843 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 21:24:15,843 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 21:28:14,612 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Mon, 16 Mar 2026 00:28:14 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-15 21:28:14,612 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-15 21:28:14,613 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-15 21:29:09,222 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-15 21:29:09,222 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 21:29:09,222 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 22:09:19,949 | INFO | services.llm_service | Creating base card
+2026-03-15 22:09:19,952 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-15 22:09:19,952 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7e13741f49d0>
+2026-03-15 22:09:19,952 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 22:09:19,952 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 22:09:19,952 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 22:09:19,953 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 22:09:19,953 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 22:10:10,069 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Mon, 16 Mar 2026 01:10:10 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-15 22:10:10,070 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-15 22:10:10,070 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-15 22:12:56,275 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-15 22:12:56,275 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 22:12:56,275 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 22:12:56,275 | INFO | services.llm_service | Creating back-end card
+2026-03-15 22:12:56,276 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 22:12:56,276 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 22:12:56,276 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 22:12:56,276 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 22:12:56,276 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 22:16:03,802 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Mon, 16 Mar 2026 01:16:03 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-15 22:16:03,802 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-15 22:16:03,803 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-15 22:18:21,418 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-15 22:18:21,418 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 22:18:21,418 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-15 22:27:25,166 | INFO | services.llm_service | Creating base card
+2026-03-15 22:27:25,168 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-15 22:27:25,168 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7541f4c6e3d0>
+2026-03-15 22:27:25,168 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-15 22:27:25,169 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-15 22:27:25,169 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-15 22:27:25,169 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-15 22:27:25,169 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-15 22:28:07,204 | DEBUG | httpcore.http11 | receive_response_headers.failed exception=KeyboardInterrupt()
+2026-03-15 22:28:07,205 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-15 22:28:07,205 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-16 11:07:16,887 | INFO | services.llm_service | Creating base card
+2026-03-16 11:07:16,891 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-16 11:07:16,891 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7df416feda50>
+2026-03-16 11:07:16,891 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-16 11:07:16,892 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-16 11:07:16,892 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-16 11:07:16,892 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-16 11:07:16,892 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-16 11:08:08,626 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Mon, 16 Mar 2026 14:08:08 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-16 11:08:08,627 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-16 11:08:08,627 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-16 11:09:35,525 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-16 11:09:35,525 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-16 11:09:35,525 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-16 11:09:35,525 | INFO | services.llm_service | Creating back-end card
+2026-03-16 11:09:35,526 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-16 11:09:35,526 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-16 11:09:35,526 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-16 11:09:35,526 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-16 11:09:35,526 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-16 11:11:41,149 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Mon, 16 Mar 2026 14:11:41 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-16 11:11:41,149 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-16 11:11:41,150 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-16 11:12:41,459 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-16 11:12:41,459 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-16 11:12:41,460 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-16 16:27:14,354 | INFO | services.llm_service | Creating base card
+2026-03-16 16:27:14,356 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-16 16:27:14,356 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f32314774d0>
+2026-03-16 16:27:14,356 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-16 16:27:14,357 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-16 16:27:14,357 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-16 16:27:14,357 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-16 16:27:14,357 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-16 16:28:01,655 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Mon, 16 Mar 2026 19:28:01 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-16 16:28:01,655 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-16 16:28:01,655 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-16 16:30:02,812 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-16 16:30:02,812 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-16 16:30:02,812 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-16 16:30:02,812 | INFO | services.llm_service | Creating back-end card
+2026-03-16 16:30:02,813 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-16 16:30:02,813 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-16 16:30:02,813 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-16 16:30:02,813 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-16 16:30:02,813 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-16 16:32:41,696 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Mon, 16 Mar 2026 19:32:41 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-16 16:32:41,696 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-16 16:32:41,696 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-16 16:34:41,211 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-16 16:34:41,211 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-16 16:34:41,211 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-16 16:34:41,222 | DEBUG | urllib3.connectionpool | Starting new HTTPS connection (1): api.trello.com:443
+2026-03-16 16:34:42,035 | DEBUG | urllib3.connectionpool | https://api.trello.com:443 "POST /1/cards?key=820ffe154187354db7ed43760fbf3916&token=ATTA0cbef90e1570dd3f5e0c8bce68338fb0a0bb53b4d2aa11f66a5d192078d43c41C8646983 HTTP/1.1" 200 1376
+2026-03-16 16:34:42,041 | DEBUG | urllib3.connectionpool | Starting new HTTPS connection (1): api.trello.com:443
+2026-03-16 16:34:42,623 | DEBUG | urllib3.connectionpool | https://api.trello.com:443 "POST /1/cards?key=820ffe154187354db7ed43760fbf3916&token=ATTA0cbef90e1570dd3f5e0c8bce68338fb0a0bb53b4d2aa11f66a5d192078d43c41C8646983 HTTP/1.1" 200 1376
+2026-03-16 16:34:42,629 | DEBUG | urllib3.connectionpool | Starting new HTTPS connection (1): api.trello.com:443
+2026-03-16 16:34:43,068 | DEBUG | urllib3.connectionpool | https://api.trello.com:443 "POST /1/cards?key=820ffe154187354db7ed43760fbf3916&token=ATTA0cbef90e1570dd3f5e0c8bce68338fb0a0bb53b4d2aa11f66a5d192078d43c41C8646983 HTTP/1.1" 200 1376
+2026-03-16 16:34:43,070 | INFO | services.llm_service | Creating front-end card
+2026-03-16 16:34:43,072 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-16 16:34:43,072 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-16 16:34:43,073 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-16 16:34:43,073 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-16 16:34:43,073 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-16 16:37:21,842 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Mon, 16 Mar 2026 19:37:21 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-16 16:37:21,843 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-16 16:37:21,843 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-16 16:41:03,645 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-16 16:41:03,645 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-16 16:41:03,645 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-16 16:41:03,646 | DEBUG | urllib3.connectionpool | Starting new HTTPS connection (1): api.trello.com:443
+2026-03-16 16:41:04,055 | DEBUG | urllib3.connectionpool | https://api.trello.com:443 "POST /1/cards?key=820ffe154187354db7ed43760fbf3916&token=ATTA0cbef90e1570dd3f5e0c8bce68338fb0a0bb53b4d2aa11f66a5d192078d43c41C8646983 HTTP/1.1" 200 1376
+2026-03-16 16:41:04,059 | DEBUG | urllib3.connectionpool | Starting new HTTPS connection (1): api.trello.com:443
+2026-03-16 16:41:04,495 | DEBUG | urllib3.connectionpool | https://api.trello.com:443 "POST /1/cards?key=820ffe154187354db7ed43760fbf3916&token=ATTA0cbef90e1570dd3f5e0c8bce68338fb0a0bb53b4d2aa11f66a5d192078d43c41C8646983 HTTP/1.1" 200 1376
+2026-03-16 16:41:04,500 | DEBUG | urllib3.connectionpool | Starting new HTTPS connection (1): api.trello.com:443
+2026-03-16 16:41:04,897 | DEBUG | urllib3.connectionpool | https://api.trello.com:443 "POST /1/cards?key=820ffe154187354db7ed43760fbf3916&token=ATTA0cbef90e1570dd3f5e0c8bce68338fb0a0bb53b4d2aa11f66a5d192078d43c41C8646983 HTTP/1.1" 200 1376
+2026-03-16 16:41:04,901 | DEBUG | urllib3.connectionpool | Starting new HTTPS connection (1): api.trello.com:443
+2026-03-16 16:41:05,294 | DEBUG | urllib3.connectionpool | https://api.trello.com:443 "POST /1/cards?key=820ffe154187354db7ed43760fbf3916&token=ATTA0cbef90e1570dd3f5e0c8bce68338fb0a0bb53b4d2aa11f66a5d192078d43c41C8646983 HTTP/1.1" 200 1376
+2026-03-17 17:09:47,627 | INFO | services.llm_service | Creating base card
+2026-03-17 17:09:47,635 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-17 17:09:47,636 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x77118dd647d0>
+2026-03-17 17:09:47,636 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 17:09:47,636 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 17:09:47,636 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 17:09:47,636 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 17:09:47,636 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 17:10:41,103 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 20:10:41 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 17:10:41,103 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 17:10:41,103 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 17:12:06,735 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 17:12:06,735 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 17:12:06,735 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 17:12:06,736 | INFO | services.llm_service | Creating back-end card
+2026-03-17 17:12:06,736 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 17:12:06,736 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 17:12:06,736 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 17:12:06,736 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 17:12:06,736 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 17:14:19,774 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 20:14:19 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 17:14:19,774 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 17:14:19,774 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 17:15:40,850 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 17:15:40,850 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 17:15:40,850 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 18:00:29,277 | INFO | services.llm_service | Creating base card
+2026-03-17 18:00:29,279 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-17 18:00:29,280 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x733c4f07e7d0>
+2026-03-17 18:00:29,280 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 18:00:29,280 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 18:00:29,280 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 18:00:29,280 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 18:00:29,280 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 18:01:12,440 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 21:01:12 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 18:01:12,441 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 18:01:12,441 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 18:01:42,866 | DEBUG | httpcore.http11 | receive_response_body.failed exception=KeyboardInterrupt()
+2026-03-17 18:01:42,866 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 18:01:42,866 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 18:05:36,802 | INFO | services.llm_service | Creating base card
+2026-03-17 18:05:36,804 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-17 18:05:36,804 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7db85cb1f5d0>
+2026-03-17 18:05:36,804 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 18:05:36,804 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 18:05:36,804 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 18:05:36,804 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 18:05:36,804 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 18:05:37,004 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 21:05:37 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 18:05:37,005 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 18:05:37,005 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 18:07:59,923 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 18:07:59,923 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 18:07:59,923 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 18:07:59,923 | INFO | services.llm_service | Creating back-end card
+2026-03-17 18:07:59,924 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 18:07:59,924 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 18:07:59,924 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 18:07:59,924 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 18:07:59,924 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 18:10:19,611 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 21:10:19 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 18:10:19,611 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 18:10:19,611 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 18:13:15,976 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 18:13:15,976 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 18:13:15,976 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 18:24:39,482 | INFO | services.llm_service | Creating base card
+2026-03-17 18:24:39,485 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-17 18:24:39,485 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x708108c72590>
+2026-03-17 18:24:39,485 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 18:24:39,485 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 18:24:39,485 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 18:24:39,485 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 18:24:39,485 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 18:25:24,010 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 21:25:24 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 18:25:24,011 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 18:25:24,011 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 18:28:15,051 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 18:28:15,051 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 18:28:15,051 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 18:28:15,052 | INFO | services.llm_service | Creating back-end card
+2026-03-17 18:28:15,052 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 18:28:15,052 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 18:28:15,052 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 18:28:15,053 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 18:28:15,053 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 18:31:00,575 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 21:31:00 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 18:31:00,575 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 18:31:00,575 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 18:33:24,920 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 18:33:24,920 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 18:33:24,920 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 18:40:45,432 | INFO | services.llm_service | Creating base card
+2026-03-17 18:40:45,435 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-17 18:40:45,435 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7559e9dda2d0>
+2026-03-17 18:40:45,435 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 18:40:45,435 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 18:40:45,435 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 18:40:45,435 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 18:40:45,435 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 18:41:29,007 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 21:41:29 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 18:41:29,007 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 18:41:29,007 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 18:43:07,688 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 18:43:07,689 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 18:43:07,689 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 18:43:07,689 | INFO | services.llm_service | Creating back-end card
+2026-03-17 18:43:07,689 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 18:43:07,689 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 18:43:07,689 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 18:43:07,690 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 18:43:07,690 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 18:44:56,788 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 21:44:56 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 18:44:56,788 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 18:44:56,788 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 18:46:55,474 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 18:46:55,474 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 18:46:55,474 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 18:46:55,474 | INFO | root | Extraindo JSON 
+2026-03-17 18:52:34,225 | INFO | services.llm_service | Creating base card
+2026-03-17 18:52:34,228 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-17 18:52:34,228 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7cb2ea07a710>
+2026-03-17 18:52:34,228 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 18:52:34,228 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 18:52:34,228 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 18:52:34,228 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 18:52:34,228 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 18:53:16,181 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 21:53:16 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 18:53:16,182 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 18:53:16,182 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 18:55:16,101 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 18:55:16,101 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 18:55:16,101 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 18:55:16,102 | INFO | services.llm_service | Creating back-end card
+2026-03-17 18:55:16,102 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 18:55:16,103 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 18:55:16,103 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 18:55:16,103 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 18:55:16,103 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 18:57:15,888 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 21:57:15 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 18:57:15,888 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 18:57:15,888 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 19:01:08,504 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 19:01:08,505 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 19:01:08,505 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 19:01:08,505 | INFO | root | Extraindo JSON 
+2026-03-17 19:04:08,016 | INFO | services.llm_service | Creating base card
+2026-03-17 19:04:08,019 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-17 19:04:08,019 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x79b000353ed0>
+2026-03-17 19:04:08,019 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 19:04:08,019 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 19:04:08,019 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 19:04:08,019 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 19:04:08,019 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 19:04:47,707 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 22:04:47 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 19:04:47,707 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 19:04:47,707 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 19:06:56,943 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 19:06:56,944 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 19:06:56,944 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 19:06:56,944 | INFO | services.llm_service | Creating back-end card
+2026-03-17 19:06:56,944 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 19:06:56,944 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 19:06:56,944 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 19:06:56,945 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 19:06:56,945 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 19:08:57,441 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 22:08:57 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 19:08:57,441 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 19:08:57,441 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 19:10:25,709 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 19:10:25,710 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 19:10:25,710 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 19:10:25,710 | INFO | root | Extraindo JSON 
+2026-03-17 19:13:14,579 | INFO | services.llm_service | Creating base card
+2026-03-17 19:13:14,581 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-17 19:13:14,581 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x754cc0b2fc90>
+2026-03-17 19:13:14,581 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 19:13:14,582 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 19:13:14,582 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 19:13:14,582 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 19:13:14,582 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 19:13:56,302 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 22:13:56 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 19:13:56,302 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 19:13:56,303 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 19:14:43,750 | DEBUG | httpcore.http11 | receive_response_body.failed exception=KeyboardInterrupt()
+2026-03-17 19:14:43,751 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 19:14:43,751 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 19:21:00,835 | INFO | services.llm_service | Creating base card
+2026-03-17 19:21:00,837 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-17 19:21:00,838 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7ed9b067ac10>
+2026-03-17 19:21:00,838 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 19:21:00,838 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 19:21:00,838 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 19:21:00,838 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 19:21:00,838 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 19:21:42,364 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 22:21:42 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 19:21:42,364 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 19:21:42,364 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 19:23:17,107 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 19:23:17,107 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 19:23:17,107 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 19:23:17,107 | INFO | services.llm_service | Creating back-end card
+2026-03-17 19:23:17,108 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 19:23:17,108 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 19:23:17,108 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 19:23:17,108 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 19:23:17,108 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 19:25:01,937 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 22:25:01 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 19:25:01,937 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 19:25:01,938 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 19:26:59,048 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 19:26:59,048 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 19:26:59,048 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 19:26:59,048 | INFO | root | Extraindo JSON 
+2026-03-17 19:26:59,048 | INFO | root | Não foi possivel extrair o JSON. Extraindo com LLM 
+2026-03-17 19:26:59,049 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 19:26:59,049 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 19:26:59,049 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 19:26:59,049 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 19:26:59,049 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 19:27:38,000 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 22:27:37 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 19:27:38,000 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 19:27:38,000 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 19:29:14,981 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 19:29:14,981 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 19:29:14,981 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 19:29:14,981 | INFO | root | Extraindo JSON 
+2026-03-17 19:41:38,283 | INFO | services.llm_service | Creating base card
+2026-03-17 19:41:38,285 | DEBUG | httpcore.connection | connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2026-03-17 19:41:38,285 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x77986418ec50>
+2026-03-17 19:41:38,285 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 19:41:38,286 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 19:41:38,286 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 19:41:38,286 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 19:41:38,286 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 19:42:19,564 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 22:42:19 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 19:42:19,565 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 19:42:19,565 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 19:43:38,922 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 19:43:38,922 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 19:43:38,922 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 19:43:38,922 | INFO | services.llm_service | Creating back-end card
+2026-03-17 19:43:38,922 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 19:43:38,923 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 19:43:38,923 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 19:43:38,923 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 19:43:38,923 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 19:45:06,850 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 22:45:06 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 19:45:06,850 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 19:45:06,850 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 19:46:59,280 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 19:46:59,280 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 19:46:59,280 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 19:46:59,281 | INFO | root | Extraindo JSON 
+2026-03-17 19:46:59,281 | INFO | root | Não foi possivel extrair o JSON. Extraindo com LLM 
+2026-03-17 19:46:59,281 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 19:46:59,281 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 19:46:59,281 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 19:46:59,281 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 19:46:59,281 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 19:47:38,427 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 22:47:38 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 19:47:38,427 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 19:47:38,427 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 19:49:13,621 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 19:49:13,621 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 19:49:13,621 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 19:49:13,621 | INFO | root | Extraindo JSON 
+2026-03-17 19:49:13,621 | INFO | root | Não foi possivel extrair o JSON. Extraindo com LLM 
+2026-03-17 19:49:13,621 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-03-17 19:49:13,622 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-03-17 19:49:13,622 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-03-17 19:49:13,622 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-03-17 19:49:13,622 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 19:49:49,802 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Tue, 17 Mar 2026 22:49:49 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-03-17 19:49:49,803 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-17 19:49:49,803 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-03-17 19:51:23,577 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-03-17 19:51:23,577 | DEBUG | httpcore.http11 | response_closed.started
+2026-03-17 19:51:23,577 | DEBUG | httpcore.http11 | response_closed.complete
+2026-03-17 19:51:23,578 | INFO | root | Extraindo JSON 
