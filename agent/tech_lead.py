@@ -29,7 +29,7 @@ as skills na ordem correta. NUNCA pule uma etapa. NUNCA invente resultados.
 
 
 def build_agent():
-    model = ChatOllama(model="llama3.1", temperature=0.1)
+    model = ChatOllama(model="llama3.1", temperature=0.1,streaming=True)
     tools = [
         skill_analisar_requisito,
         skill_levantar_backend,

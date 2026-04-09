@@ -36,7 +36,6 @@ class TrelloService:
         
         """Objetivo: Executar o endpoint create card"""
         print(name, desc)
-        desc = utils.limpar_aspas(desc)
         card = TrelloCard(titulo=name, descricao=desc, idList=list_id)
         logger.info("Criando card '%s' na lista '%s'...", card.titulo, list_id)
         payload_card = card.model_dump(by_alias=True, exclude_none=True)
@@ -124,16 +123,11 @@ class TrelloService:
     def add_label_to_card(self, card_id: str, label_id: str) -> dict:
         """
         Adiciona uma label (tag) a um card existente.
-        
-        Args:
             card_id: ID do card no Trello
             label_id: ID da label a ser adicionada
         
         Returns:
             Dicionário com dados da label adicionada
-        
-        Raises:
-            Exception: Se houver erro na associação
         """
         if not card_id or not label_id:
             logger.error("card_id ou label_id inválido. card_id: %s, label_id: %s", card_id, label_id)

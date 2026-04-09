@@ -56,6 +56,7 @@ Analise o requisito abaixo e retorne SOMENTE um JSON estruturado.
 - Identifique as entidades do domínio (substantivos principais)
 - Liste as funcionalidades de backend (uma por responsabilidade técnica)
 - Liste as funcionalidades de frontend (uma por tela ou componente principal)
+- Para os campos use o requisito original como única fonte de verdade — NÃO adicione ou remova nada que não esteja lá
 
 ## Retorne SOMENTE este JSON, sem texto antes ou depois, usando aspas duplas:
 {{
@@ -111,6 +112,10 @@ Analise o requisito abaixo e retorne SOMENTE um JSON estruturado.
         - NÃO adicione funcionalidades que "fariam sentido" mas não estão no requisito
         - NÃO infira endpoints, associações ou operações não mencionadas
         - Use os nomes das entidades exatamente como aparecem no requisito
+        - NÃO adicione telas que não estejam no requisito original
+        - utilize apenas os campos do requisito original como única fonte de verdade — NÃO adicione ou remova nada que não esteja lá
+
+
 
         ## Retorne SOMENTE este JSON, sem texto antes ou depois:
         {{
@@ -159,8 +164,10 @@ Analise o requisito abaixo e retorne SOMENTE um JSON estruturado.
         ## Instruções OBRIGATÓRIAS
         - Liste APENAS funcionalidades EXPLICITAMENTE descritas no requisito original
         - Liste UMA funcionalidade por tela ou componente principal
-        - Cada funcionalidade deve corresponder a um endpoint do backend acima
+        - Cada funcionalidade deve ter o endpoint igual ao backend correspondente
         - NÃO adicione telas que não estejam no requisito original
+        - utilize apenas os campos do requisito original como única fonte de verdade — NÃO adicione ou remova nada que não esteja lá
+
 
         ## Retorne SOMENTE este JSON, sem texto antes ou depois, usando aspas duplas:
         {{
@@ -256,7 +263,8 @@ Analise o requisito abaixo e retorne SOMENTE um JSON estruturado.
 
         ## Validações Esperadas
         Para cada campo, considere:
-        - Caracteres especiais permitidos/bloqueados
+         - utilize apenas os campos do requisito original como única fonte de verdade — NÃO adicione ou remova nada que não esteja lá
+        - Obrigatoriedade real (se o requisito diz "campo obrigatório", marque como obrigatório)
         - Comprimento mínimo e máximo
         - Formato esperado (email, URL, data, etc.)
         - Valores pré-definidos (enums)
@@ -353,50 +361,50 @@ Analise o requisito abaixo e retorne SOMENTE um JSON estruturado.
 
         descricao = f"""## {titulo}
 
-        **Descrição:** {descricao_resumida}
-        **Prioridade:** Essencial | Evidente
-        **Módulo:** {modulo}
-        **Endpoint:** `{endpoint}`
+**Descrição:** {descricao_resumida}
+**Prioridade:** Essencial | Evidente
+**Módulo:** {modulo}
+**Endpoint:** `{endpoint}`
 
-        ---
+---
 
-        ### Critério de Aceite – QA
-        - [ ] **Perfis de acesso:** {perfis}
-        - [ ] Atender todos os requisitos e regras de negócio associadas
-        - [ ] Todos os critérios de QA devem passar
+### Critério de Aceite – QA
+- [ ] **Perfis de acesso:** {perfis}
+- [ ] Atender todos os requisitos e regras de negócio associadas
+- [ ] Todos os critérios de QA devem passar
 
-        ### Requisito Funcional
-        **RF##PP | Essencial | Evidente**
+### Requisito Funcional
+**RF##PP | Essencial | Evidente**
 
-        {descricao_resumida}
+{descricao_resumida}
 
-        ### Regras de Negócio
-        {regras_md if regras_md else "- Nenhuma regra específica"}
+### Regras de Negócio
+{regras_md if regras_md else "- Nenhuma regra específica"}
 
-        ### Contrato da API
+### Contrato da API
 
-        **Endpoint:** `{endpoint}`
+**Endpoint:** `{endpoint}`
 
-        **Ações e Resultados Esperados:**
+**Ações e Resultados Esperados:**
 
-        #### Fluxo esperado
+#### Fluxo esperado
 
-        {acoes_md}
+{acoes_md}
 
-        ### Campos do Endpoint
+### Campos do Endpoint
 
-        
-        {campos_md }
 
-        ### Critérios de Qualidade (QA)
+{campos_md }
 
-        Verificações obrigatórias para validação da funcionalidade:
+### Critérios de Qualidade (QA)
 
-        {criterios_md if criterios_md else "- [ ] Validação padrão"}
+Verificações obrigatórias para validação da funcionalidade:
 
-        ### Tags 
-        {', '.join(tags) if tags else "Nenhuma tag"}
-        """
+{criterios_md if criterios_md else "- [ ] Validação padrão"}
+
+### Tags 
+{', '.join(tags) if tags else "Nenhuma tag"}
+"""
 
         logger.info("Story de backend formatada: %s", titulo)
         return {"titulo": titulo, "descricao": descricao, "tags": tags}
@@ -457,6 +465,8 @@ Analise o requisito abaixo e retorne SOMENTE um JSON estruturado.
 
         ## Detalhes dos Campos
         Para cada campo do formulário, especifique:
+        - utilize apenas os campos do requisito original como única fonte de verdade — NÃO adicione ou remova nada que não esteja lá
+        - Obrigatoriedade real (se o requisito diz "campo obrigatório", marque como obrigatório)
         - Tipo de dado (text, email, select, date, number, etc.)
         - Validações específicas (padrão regex, comprimento, valores permitidos)
         - Comportamento (máscara, auto-complete, dependência de outros campos)
@@ -552,58 +562,59 @@ Analise o requisito abaixo e retorne SOMENTE um JSON estruturado.
             for i, c in enumerate(detalhamento.get("criterios_qa", []))
         )
 
-        descricao = f"""## {titulo}
+        descricao = f"""
+        
+        ## {titulo}
+**Descrição:** {descricao_resumida}
+**Prioridade:** Essencial | Evidente
+**Módulo:** {modulo}
+**Endpoint Backend:** `{endpoint_consumido}`
 
-        **Descrição:** {descricao_resumida}
-        **Prioridade:** Essencial | Evidente
-        **Módulo:** {modulo}
-        **Endpoint Backend:** `{endpoint_consumido}`
+---
 
-        ---
+### Critério de Aceite – QA
+- [ ] **Perfis de acesso:** {perfis}
+- [ ] Atender todos os requisitos e regras de negócio associadas
+- [ ] Todos os critérios de QA devem passar
 
-        ### Critério de Aceite – QA
-        - [ ] **Perfis de acesso:** {perfis}
-        - [ ] Atender todos os requisitos e regras de negócio associadas
-        - [ ] Todos os critérios de QA devem passar
 
-       
-        ## Requisito original:
-        {requisito_original}
-        ### Requisito Funcional
-        {descricao_resumida}
+## Requisito original:
+{requisito_original}
+### Requisito Funcional
+{descricao_resumida}
 
-        ### Contexto de Integração Backend
+### Contexto de Integração Backend
 
-        Este componente consome o seguinte endpoint do backend:
+Este componente consome o seguinte endpoint do backend:
 
-        **Endpoint:** `{endpoint_consumido}`
+**Endpoint:** `{endpoint_consumido}`
 
-        ### Regras de UX / Integração
+### Regras de UX / Integração
 
-        {regras_md if regras_md else "- Nenhuma regra específica"}
+{regras_md if regras_md else "- Nenhuma regra específica"}
 
-        ### Tarefas Técnicas
+### Tarefas Técnicas
 
-        Atividades que devem ser implementadas para completar este card:
+Atividades que devem ser implementadas para completar este card:
 
-        {tarefas_md if tarefas_md else "- [ ] Tarefa padrão"}
+{tarefas_md if tarefas_md else "- [ ] Tarefa padrão"}
 
-        ### Estrutura de Dados – Campos do Formulário / Tela
+### Estrutura de Dados – Campos do Formulário / Tela
 
-        Campos do Endpoint
+Campos do Endpoint
 
-        {campos_md}
+{campos_md}
 
-        ### Critérios de Qualidade (QA)
+### Critérios de Qualidade (QA)
 
-        Verificações obrigatórias para validação da funcionalidade no frontend:
+Verificações obrigatórias para validação da funcionalidade no frontend:
 
-        {criterios_md}
+{criterios_md}
 
-        ### Tags 
-        {', '.join(tags) if tags else "Nenhuma tag"}
+### Tags 
+{', '.join(tags) if tags else "Nenhuma tag"}
 
-        """
+"""
 
         logger.info("Story de frontend formatada: %s", titulo)
         return {"titulo": titulo, "descricao": descricao, "tags": tags}

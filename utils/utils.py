@@ -66,20 +66,3 @@ def load_prompt(path:str)-> str:
         """
         with open(path,"r", encoding="utf-8") as file: 
             return file.read()
-def limpar_aspas(desc: str) -> str:
-    if not desc:
-        return desc
-
-    desc = desc.strip()
-
-    # Remove aspas triplas primeiro
-    if (desc.startswith('"""') and desc.endswith('"""')) or \
-       (desc.startswith("'''") and desc.endswith("'''")):
-        return desc[3:-3].strip()
-
-    # Remove aspas simples ou duplas
-    if (desc.startswith('"') and desc.endswith('"')) or \
-       (desc.startswith("'") and desc.endswith("'")):
-        return desc[1:-1].strip()
-
-    return desc

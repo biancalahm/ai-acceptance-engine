@@ -37,7 +37,7 @@ def processar_requisito(requisito: str) -> None:
     resultado = publicar_cards_trello()
     print(resultado)
 if __name__ == "__main__":
-    requisito = """ RF01P: O sistema deverá permitir que usuários com perfil de Gerente cadastrar, consultar, alterar e excluir Produtos.
+    requisito = """ RF01P: O sistema deverá permitir que usuários com perfil de Gerente cadastrar e consultar Produtos.
     RN01P: Cada Produto deve conter os seguintes campos:
     [Ob] Nome (obrigatório, mín. 5 caracteres, máx. 200);  
     [Ob] Quantidade disponível (obrigatório, inteiro positivo) ;  
